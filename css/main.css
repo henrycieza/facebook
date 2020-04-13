@@ -1,0 +1,55 @@
+:root{   
+    --cabecera-bg-color: #3b5998;
+    --color-texto: #fff;
+    
+
+}
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    /*margin: 0 auto;*/
+}
+
+a:link, a:visited, a:active a:hover {
+    text-decoration:none;
+    color:#fff;
+}
+
+.contenedor{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 50% 30%;
+    
+}
+
+@font-face{
+    font-family:facebook;
+    src: url(./fonts/facebook.otf);
+}
+.cabecera{
+    display:grid;
+    height: 25vh;
+    background-color: var(--cabecera-bg-color);
+    grid-template-columns: 30% 20% 20% 10%;
+    grid-template-rows: 100%;
+}
+.cabecera .logo{
+    font-family: facebook;
+    color: var( --color-texto);
+    font-size: 2em;
+    font-weight: 400;
+    
+    
+}
+
+.cuerpo1{
+    background-color: red;
+}
+.pie1{
+    background-color: royalblue;
+}
