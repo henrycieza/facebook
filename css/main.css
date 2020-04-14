@@ -1,7 +1,7 @@
 :root{   
     --cabecera-bg-color: #3b5998;
     --color-texto: #fff;
-    
+    --color-bg-cuerpo: #e9ebee;
 
 }
 *{
@@ -19,7 +19,7 @@
 .logo>h1>a:link, .logo>h1>a:visited, .logo>h1>a:hover .logo a:active{
     text-decoration:none;
     color:#fff;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
 
 
@@ -45,7 +45,7 @@ label{
 input{
     border-radius: 0;
     height: 23px;
-    border: 1px;
+    border: 1px solid #000;
 }
 
 .contenedor{
@@ -87,10 +87,23 @@ input{
     border: 1px solid #fff;
     cursor: pointer;
 }
-
-.cuerpo1{
-    background-color: red;
+.usuario{
+    display: grid;
+    justify-content: end;
+    align-content: start;
 }
+.password{
+    display: grid;
+    justify-content: end;
+}
+/*--------- CUERPO ---------*/
+.cuerpo{
+    background-color: var( --color-bg-cuerpo );
+    display: grid;
+    grid-template-columns: repeat (2 40%);
+    grid-template-rows:400px ;
+}
+/*---------PIE-------------*/
 .pie1{
     background-color: royalblue;
 }
