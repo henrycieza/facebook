@@ -72,13 +72,16 @@ input{
 .cabecera{
     display:grid;
     background-color: var(--cabecera-bg-color);
-    grid-template-columns: 45% 20% 20% 15%;
+    /*grid-template-columns: 45% 20% 20% 15%;*/
+    grid-template-columns: 49% 15% 15% 21%;
     grid-template-rows: 100%;
   
 }
 
 .inicio{
-    justify-self: center;
+    display: grid;
+    justify-content: start;
+    margin-top: 8px;
     align-self: center;
 }
 .btnsubmit{
@@ -93,21 +96,27 @@ input{
 }
 .usuario{
     display: grid;
-    justify-content: end;
+    justify-content: start;
     align-content: start;
+}
+.usuario > input{
+    width: 180px;
 }
 .password{
     display: grid;
-    justify-content: end;
+    justify-content: start;
+}
+.password > input{
+    width: 180px;
 }
 /*--------- CUERPO ---------*/
 .cuerpo{
     display: grid;
     grid-template-columns: repeat(2, 500px); 
-    grid-template-rows:  repeat(2, 500px);
+    grid-template-rows:  repeat(2, 200px);
     justify-self: center;
     background-color: var( --color-bg-cuerpo );
-    padding-top: 1.5%;
+    padding-top: 1%;
 }
 .card > img {
     height: 150px;
@@ -139,6 +148,6 @@ input{
   }
 
 /*---------PIE-------------*/
-.pie1{
-    background-color: royalblue;
+.pie{
+    background-color: #fff;
 }
