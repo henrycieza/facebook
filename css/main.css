@@ -12,15 +12,27 @@
     font-size: 1em;
     /*margin: 0 auto;*/
 }
-
-a:link, a:visited, a:active{
+.logo{
+    align-self: center;
+    padding-left: 20%;
+}
+.logo>h1>a:link, .logo>h1>a:visited, .logo>h1>a:hover .logo a:active{
     text-decoration:none;
     color:#fff;
     font-size: 0.8em;
     font-weight: bold;
+
+
 }
-a:hover{
+.password > a {
+    color:#fff;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.password a:hover{
     color:#6762FF;
+    font-size: 0.8em;
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -32,7 +44,8 @@ label{
 }
 input{
     border-radius: 0;
-
+    height: 23px;
+    border: 1px;
 }
 
 .contenedor{
@@ -54,17 +67,25 @@ input{
 }
 .cabecera{
     display:grid;
-    height: 25vh;
     background-color: var(--cabecera-bg-color);
-    grid-template-columns: 50% 20% 20% 10%;
+    grid-template-columns: 45% 20% 20% 15%;
     grid-template-rows: 100%;
+  
 }
-.cabecera .logo{
-    font-family: facebook;
-    color: var( --color-texto);
-    font-size: 2em;
-    font-weight: 400;
+
+.inicio{
+    justify-self: center;
+    align-self: center;
+}
+.btnsubmit{
     
+   width: 120px;
+    background-color: var( --cabecera-bg-color );
+    color: var(--color-texto );
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 
 .cuerpo1{
