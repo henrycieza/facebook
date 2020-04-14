@@ -13,9 +13,26 @@
     /*margin: 0 auto;*/
 }
 
-a:link, a:visited, a:active a:hover {
+a:link, a:visited, a:active{
     text-decoration:none;
     color:#fff;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+a:hover{
+    color:#6762FF;
+    text-decoration: underline;
+}
+
+label{
+    color : var(--color-texto );
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+input{
+    border-radius: 0;
+
 }
 
 .contenedor{
@@ -26,7 +43,11 @@ a:link, a:visited, a:active a:hover {
     grid-template-rows: 20% 50% 30%;
     
 }
-
+.rememberpass{
+    color : var(--color-texto );
+    font-size: 0.5em;
+    font-weight: bold;
+}
 @font-face{
     font-family:facebook;
     src: url(./fonts/facebook.otf);
@@ -35,7 +56,7 @@ a:link, a:visited, a:active a:hover {
     display:grid;
     height: 25vh;
     background-color: var(--cabecera-bg-color);
-    grid-template-columns: 30% 20% 20% 10%;
+    grid-template-columns: 50% 20% 20% 10%;
     grid-template-rows: 100%;
 }
 .cabecera .logo{
@@ -43,7 +64,6 @@ a:link, a:visited, a:active a:hover {
     color: var( --color-texto);
     font-size: 2em;
     font-weight: 400;
-    
     
 }
 
