@@ -2,7 +2,10 @@
     --cabecera-bg-color: #3b5998;
     --color-texto: #fff;
     --color-bg-cuerpo: #e9ebee;
-
+    --color-font-conditions: #90949c;
+    --color-bg-pie: #ffffff;
+    --color-bg-btn: #67a052;
+    --color-font-placeholder: #4E4D6A;
 }
 *{
     margin:0;
@@ -94,7 +97,7 @@ input{
 }
 .btnsubmit{
     
-   width: 120px;
+   width: 100px;
     background-color: var( --cabecera-bg-color );
     color: var(--color-texto );
     font-size: 0.8em;
@@ -116,10 +119,11 @@ input{
 .cuerpo{
     display: grid;
     grid-template-columns: repeat(2, 500px); 
-    grid-template-rows:  repeat(2, 200px);
+    grid-template-rows:  repeat(2, auto);
     justify-self: center;
     background-color: var( --color-bg-cuerpo );
-    padding-top: 1%;
+    margin: 1% 0 3% 0;
+
 }
 .card > img {
     height: 150px;
@@ -149,8 +153,40 @@ input{
   .container {
     padding: 2px 16px;
   }
+.registro input{
+    margin: 5px 5px 5px 0px;
+    border: solid 1.5px #bfc9d9;
+    border-radius: 2px;
+    height: 40px;
+    padding-left: 5px;
+}  
+.registro .usuario-name input{
+    width: 240px;
+   
+}
+.registro .usuario-email input, .registro .usuario-password input{
+    width: 490px;
+}
 
+::placeholder{
+    color: var( --color-font-placeholder );
+    
+}
+.conditions p
+{
+    width: 400px;
+    font-size: 0.85em;
+    color: var( --color-font-conditions ) ;
+    font-weight:1em;
+}
+.registro > .btnsubmit{
+    background-color: var( --color-bg-btn );
+    width: 240px;
+    font-size: 1.2em;
+    
+}
 /*---------PIE-------------*/
 .pie{
-    background-color: #fff;
+    display: grid;
+    background-color: var( --color-bg-pie );
 }
