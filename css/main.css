@@ -137,6 +137,7 @@ input{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin-top: 20px;
+    cursor: pointer;
   }
   .conta-card{
     align-self: center;
@@ -172,6 +173,58 @@ input{
     color: var( --color-font-placeholder );
     
 }
+.usuario-date h3, .usuario-sexo h3{
+    color:#969696;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.usuario-date{
+    margin-top: 15px;
+}
+.usuario-sexo{
+    margin-top: 15px;
+}
+.diaMes{
+    border: solid 1.5px #bfc9d9;
+    border-radius: 2px;
+    height: 30px;
+    width: 60px;
+    appearance: none;
+    background-color: #fff;
+    
+}
+.mesAgno{
+    border: solid 1.5px #bfc9d9;
+    border-radius: 2px;
+    height: 30px;
+    width: 100px;
+    appearance: none;
+    background-color: #fff;
+}
+.Agno{
+    border: solid 1.5px #bfc9d9;
+    border-radius: 2px;
+    height: 30px;
+    width: 60px;
+    appearance: none;
+    background-color: #fff;
+}
+.usuario-sexo h3{
+    margin-bottom: 0;
+}
+.label-sexo{
+    color:#000;
+    font-weight: initial;
+    font-size: 1em;
+}
+.radio-sexo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.radio-sexo label{
+    margin: 0 10px 0 10px;
+}
 .conditions p
 {
     width: 400px;
@@ -185,8 +238,23 @@ input{
     font-size: 1.2em;
     
 }
+.crea-pagina > p{
+    width: 400px;
+    font-size: 0.9em;
+    color: var( --color-font-conditions ) ;
+    font-weight:1em;
+}
+.crea-pagina p a{
+    color:var( --cabecera-bg-color );
+}
+.crea-pagina p a:hover{
+    text-decoration: underline;
+}
 /*---------PIE-------------*/
 .pie{
     display: grid;
     background-color: var( --color-bg-pie );
+}
+.idiomas li{
+    display: inline;
 }

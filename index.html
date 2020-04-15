@@ -63,8 +63,8 @@
                                 </div>
                                 <div class="registro">
                                       <div class="usuario-name">
-                                        <input type="text" id="first-name" name="first-name" placeholder="Nombre">
-                                        <input type="text" id="last-name" name="last-name" placeholder="Apellido">
+                                        <input type="text" id="first-name" name="first-name" placeholder="Nombre" minlength="5" maxlength="40">
+                                        <input type="text" id="last-name" name="last-name" placeholder="Apellido" minlength="5" maxlength="40">
                                       </div> 
                                       <div class="usuario-email">
                                         <input type="text" id="usuario-email" name="usuario-email"  placeholder="Número de Movil o Correo">
@@ -74,24 +74,32 @@
                                       </div> 
                                       <div class="usuario-date">
                                         <h3>Fecha de Nacimiento</h3>
-                                            <select id="diaMes">
-                                              <option value="dia">Dia</option>
+                                            <select class="diaMes">
+                                              <option value="1">Día</option>
                                             </select>
-                                            <select id="mesAgno">
+                                            <select class="mesAgno">
                                               <option value="mes">Mes</option>
                                             </select>
-                                            <select id="Agno">
+                                            <select class="Agno">
                                               <option value="Agno">Año</option>
                                             </select>
                                       </div> 
-                                      <div class="sexo">
+                                      <div class="usuario-sexo">
                                         <h3>Sexo</h3>
-                                        <input type="radio" id="female" name="gender" value="female">
-                                        <label for="female">Mujer</label>
-                                        <input type="radio" id="male" name="gender" value="male">
-                                        <label for="male">Hombre</label>
-                                        <input type="radio" id="other" name="gender" value="other">
-                                        <label for="other">Personalizado</label>
+                                        <div class="radio-sexo">
+                                            
+                                            <input type="radio" id="female" name="gender" value="female">
+                                            <label class="label-sexo" for="female">Mujer</label>
+                                            
+                                            
+                                            <input type="radio" id="male" name="gender" value="male">
+                                            <label class="label-sexo" for="male">Hombre</label>
+                                           
+                                            
+                                            <input type="radio" id="other" name="gender" value="other">
+                                            <label class="label-sexo" for="other">Personalizado</label>
+                                            
+                                        </div>      
                                       </div>
                                       <div class="conditions">
                                             <p>
@@ -100,6 +108,9 @@
                                       </div>
                                       <div class="registro">
                                         <input class="btnsubmit" type="submit" value="Registrarte">
+                                      </div>
+                                      <div class="crea-pagina">
+                                        <p><a href="#">Crea una página</a> para un personaje público, un grupo de música o un negocio.</p>
                                       </div>
                                 </div>
                           </div>
@@ -110,7 +121,21 @@
                   <!------------------------------------------------------------------>
                   <!-- PIE -->
                   <div class="pie">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non incidunt tempora, ex consequatur rerum ipsam velit veniam itaque cupiditate iure. Quis sapiente qui voluptatibus? Numquam earum accusantium quos ad?</p>
+                    <ul class="idiomas">
+                        <li><a>Español</a></li>
+                        <li><a>Català</a></li>
+                        <li><a>English (US)</a></li>
+                        <li><a>Français (France)</a></li>
+                        <li><a>Română</a></li>
+                        <li><a>Italiano</a></li>
+                        <li><a>Galego</a></li>
+                        <li><a>Deutsch</a></li>
+                        <li><a>Português (Brasil)</a></li>
+                        <li><a>العربية</a></li>
+                        <li><a>हिन्दी</a></li>
+                        <li><a>+</a></li>
+                       
+                    </ul>
                   </div>
                   
           </div>
