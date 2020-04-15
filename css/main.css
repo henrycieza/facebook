@@ -13,6 +13,10 @@
    
 
 }
+@font-face{
+    font-family:facebook;
+    src: url(./fonts/facebook.otf);
+}
 body{
     background-color: var( --color-bg-cuerpo );
 }
@@ -65,24 +69,28 @@ input{
     font-size: 0.5em;
     font-weight: bold;
 }
-@font-face{
-    font-family:facebook;
-    src: url(./fonts/facebook.otf);
-}
+
 .cabecera{
     display:grid;
     background-color: var(--cabecera-bg-color);
     /*grid-template-columns: 45% 20% 20% 15%;*/
-    grid-template-columns: 49% 15% 15% 21%;
+    grid-template-columns: 49% 51%;
     grid-template-rows: 100%;
   
 }
-
-.inicio{
-    display: grid;
-    justify-content: start;
-    margin-top: 8px;
-    align-self: center;
+.form-inline{
+    display:flex;
+    flex-flow: row wrap;
+     align-items: start;
+     
+}
+.usuario{
+    margin-right: 20px;
+}
+.password{
+    justify-content: start !important;
+    align-items: start;
+    margin-left: 0px;
 }
 .btnsubmit{
     
@@ -93,19 +101,14 @@ input{
     font-weight: bold;
     border: 1px solid #fff;
     cursor: pointer;
+    margin-left: 40px;
+    margin-top: 20px;
 }
-.usuario{
-    display: grid;
-    justify-content: start;
-    align-content: start;
-}
+
 .usuario > input{
     width: 180px;
 }
-.password{
-    display: grid;
-    justify-content: start;
-}
+
 .password > input{
     width: 180px;
 }
