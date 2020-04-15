@@ -122,7 +122,7 @@ input{
     grid-template-rows:  repeat(2, auto);
     justify-self: center;
     background-color: var( --color-bg-cuerpo );
-    margin: 1% 0 3% 0;
+    margin: 2% 0 3% 0;
 
 }
 .card > img {
@@ -144,6 +144,10 @@ input{
   }
   .conta-card > h5{
     padding-top: 10px;
+  }
+  .body-right h3, .body-left h3{
+    font-size: 2em;
+    font-weight: bold;
   }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -253,8 +257,32 @@ input{
 /*---------PIE-------------*/
 .pie{
     display: grid;
+    grid-auto-columns:90%;
+    justify-content: center;
     background-color: var( --color-bg-pie );
 }
+.idiomas{
+    border-bottom: solid 1.5px #e9ebee;
+}
 .idiomas li{
-    display: inline;
+    display:inline-block;
+    width:auto;
+    padding:10px 10px;
+    text-align: center;
+    
+}
+.opciones-facebook li{
+    display:inline-block;
+    width:auto;
+    padding:5px 0 0 10px;
+    text-align: center;
+}
+.idiomas li a, .opciones-facebook li a{
+    font-size: 0.8em;
+    color: var( --cabecera-bg-color );
+}
+.facebook{
+    font-size: 0.9em;
+    color: var( --color-font-conditions ) ;
+    font-weight:1em;
 }
